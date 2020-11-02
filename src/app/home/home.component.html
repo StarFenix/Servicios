@@ -1,0 +1,7 @@
+<br>
+<div class="container">
+    <div class="articulo" *ngFor="let art of articulos">
+        <h4 (click)="verDetalle(art)" >{{art.title}}</h4>
+        <p>{{art.body}}</p>
+    </div>
+</div>
