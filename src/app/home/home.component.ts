@@ -42,4 +42,12 @@ export class HomeComponent implements OnInit {
     })
   }
 
+  editar(art){
+    art.title= "Títilo Editado";
+    art.body= "Cuerpo Editado";
+    this.ArticuloInyectado.actualizarArticulo(art).subscribe((articuloActualizado)=>{
+      console.log(articuloActualizado);
+    })
+  }
+
 }
